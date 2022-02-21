@@ -1,0 +1,3 @@
+on lance dirb sur l'ip du site et ca nous sort qu'il y a de dispo /admin et /whatever et dans /whatever on peut telecharger le htpasswd et dedans on obtient :
+
+root:8621ffdbc5698829397d97767ac13db3
