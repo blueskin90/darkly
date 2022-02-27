@@ -1,0 +1,3 @@
+on peut voir que dans chaque requete on envoie un cookie avec comme valeur : I_am_admin=68934a3e9455fa72420237eb05902327 lorsqu'on reverse le md5 on obtient false, on encrypte donc true en md5 ce qui nous donne : b326b5062b2f0e69046810717534cb09
+
+lorsqu'on envoie un cookie avec I_am_admin=b326b5062b2f0e69046810717534cb09 dans le code de la page on trouve le flag 

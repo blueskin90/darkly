@@ -1,0 +1,11 @@
+si on clique sur le C Borntosec on arrivedans une pageau titre etrange, lorsqu'on inspecte le code dans le commentaire il y a marque : 
+
+<!--
+You must cumming from : "https://www.nsa.gov/" to go to the next step
+-->
+
+ainsi que :
+
+Let's use this browser : "ft_bornToSec". It will help you a lot.
+
+on va donc forger une requete sur cette page qui indique qu'on provient de www.nsa.gov et que notre browser est : "ft_bornToSec"

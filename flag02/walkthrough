@@ -1,3 +1,7 @@
 on lance dirb sur l'ip du site et ca nous sort qu'il y a de dispo /admin et /whatever et dans /whatever on peut telecharger le htpasswd et dedans on obtient :
 
 root:8621ffdbc5698829397d97767ac13db3
+
+si on reverse 8621ffdbc5698829397d97767ac13db3 qui est en md5 cela nous donne dragon
+
+on va donc sur le /admin on essaye root et dragon comme password et on obtient le flag
