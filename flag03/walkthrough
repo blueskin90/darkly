@@ -9,3 +9,5 @@ ainsi que :
 Let's use this browser : "ft_bornToSec". It will help you a lot.
 
 on va donc forger une requete sur cette page qui indique qu'on provient de www.nsa.gov et que notre browser est : "ft_bornToSec"
+
+on met User-Agent = ft_bornToSec et Referer = https://www.nsa.gov/ (important le /) et on recupere le flag
