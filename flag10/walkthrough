@@ -1,0 +1,5 @@
+avec dirb on trouve un dossier .hidden, lorsqu'on va dedans, on trouve une foret de dossiers et sous dossiers, on les recupere tous avec `wget -r --no-parent -e robots=off http://192.168.56.102/.hidden/`
+
+on va dans le dossier recupere et on fait un : `grep -r -Ev 'aide|voisin|Non|<|non'`
+
+ce qui nous donne : 99dde1d35d1fdd283924d84e6d9f1d820
