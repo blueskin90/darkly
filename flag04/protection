@@ -1,0 +1,1 @@
+ne pas utiliser md5 pour encoder, ne pas encoder un terme facilement revertable en md5, et ne pas envoyer des donnees sensibles dans le cookie / ne pas croire les donnees encoyees par un cookie (surtout le statut admin ...) ou en js par exemple utiliser du JWT

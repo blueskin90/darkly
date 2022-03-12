@@ -6,4 +6,4 @@ et on recupere les passwords
 
 il est encode en md5 et la valeur est shadow
 
-le password est tellement simple qu'on peut faire du bruteforce pour le trouver
+le password est tellement simple qu'on aurait pu faire du bruteforce pour le trouver

@@ -1,0 +1,1 @@
+on peut se proteger en mettant des protections contre un grand nombre de requetes a la seconde (via fail2ban par exemple) ce qui empeche les gens de spam les requetes via dirb

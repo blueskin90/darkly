@@ -1,0 +1,1 @@
+ne pas faire confiance a ce qui provient du front, verifier le magic number du fichier a la reception ou utiliser une lib qui le fait pour nous.
