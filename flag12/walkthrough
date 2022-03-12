@@ -1,5 +1,9 @@
+dans la page members, vu qu'on peut faire de l'injection SQL on recupere les passwords d'utilisateurs via la commande suivante :
+
 1 UNION select username, password FROM Member_Brute_Force.db_default
 
 et on recupere les passwords
 
 il est encode en md5 et la valeur est shadow
+
+le password est tellement simple qu'on peut faire du bruteforce pour le trouver

