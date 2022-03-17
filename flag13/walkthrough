@@ -1,0 +1,12 @@
+on voit que la seule image clickable est un logo de la nsa qui nous envoie sur une page ou on peut voir
+l'url qu'on a src=nsa, si on change par src=pouet, on a pas le flag, mais dans le code source de la page on peut voir :
+
+<object data="pouet"></object>
+
+quand on essaye : alert('pouet') ca ne marche pas, meme avec javascript:alert('pouet')
+
+du coup on essaye en passant directement en html et en encodant en base64 pour eviter toute verification
+
+data:text/html;base64,PHNjcmlwdD5hbGVydCgncG91ZXQnKTs8L3NjcmlwdD4=
+
+si on met ca a la place de src on recupere le flag :D

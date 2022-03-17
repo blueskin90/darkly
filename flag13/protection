@@ -1,0 +1,1 @@
+pour eviter cela, il faut mieux parser ce que la personne envoie en parametre, peut etre utiliser une balise img au lieu d'une balise object si on ne veut display que des images.
